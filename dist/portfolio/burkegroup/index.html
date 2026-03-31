@@ -3,50 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../assets/style.css" />
     <link rel="stylesheet" href="../../assets/custom.css" />
     <title>Chris Wahlfeldt</title>
   </head>
 
   <body>
-    <header class="container">
-      <nav>
-        <ul>
-          <li class="rainbow-title">
-            <span style="color: var(--ctp-red)">C</span
-            ><span style="color: var(--ctp-peach)">h</span
-            ><span style="color: var(--ctp-yellow)">r</span
-            ><span style="color: var(--ctp-green)">i</span
-            ><span style="color: var(--ctp-teal)">s</span>
-            <span style="color: var(--ctp-blue)">W</span
-            ><span style="color: var(--ctp-lavender)">a</span
-            ><span style="color: var(--ctp-mauve)">h</span
-            ><span style="color: var(--ctp-pink)">l</span
-            ><span style="color: var(--ctp-flamingo)">f</span
-            ><span style="color: var(--ctp-rosewater)">e</span
-            ><span style="color: var(--ctp-red)">l</span
-            ><span style="color: var(--ctp-peach)">d</span
-            ><span style="color: var(--ctp-yellow)">t</span>
-          </li>
-        </ul>
-        <ul>
-          <li><a href="/">About</a></li>
-          &nbsp;&nbsp;
-          <li><a href="/portfolio">Portfolio</a></li>
-          &nbsp;&nbsp;
-          <li>
-            <a
-              href="https://cwahlfeldt.github.io/resume/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Resume</a
-            >
-          </li>
-        </ul>
+    <header id="site-header">
+      <nav class="container">
+        <a href="/" class="nav-name gradient-text">Chris Wahlfeldt</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a
+            href="https://cwahlfeldt.github.io/resume/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Resume</a
+          >
+        </div>
       </nav>
     </header>
 
-    <main class="container"><article>
+    <main><article>
   <figure align="right">
     <img src="/assets/images/burkegroup.png" alt="" />
     <figcaption>A caption wrapped with the image.</figcaption>
@@ -58,10 +36,19 @@
     image and its caption together as a single unit within the text flow.
   </p>
 </article></main>
-    <hr />
 
-    <footer class="container">
-      <p>You made it this far!</p>
+    <footer id="contact">
+      <div class="container">
+        <h2>Get in touch</h2>
+        <div class="footer-links">
+          <a href="mailto:cwahlfeldt@gmail.com">Email</a>
+          <a href="https://github.com/cwahlfeldt" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://cwahlfeldt.github.io/resume/" target="_blank" rel="noopener noreferrer">Resume</a>
+        </div>
+        <p class="footer-note">Thanks for stopping by.</p>
+      </div>
     </footer>
+
+    <script src="../../assets/js/main.js" defer></script>
   </body>
 </html>
