@@ -305,12 +305,18 @@ a:hover {
   color: var(--ctp-lavender);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.2;
   color: var(--text);
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -333,7 +339,10 @@ section {
   top: 0;
   z-index: 100;
   background: var(--bg);
-  transition: background 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease,
+    backdrop-filter 0.3s ease;
 }
 
 #site-header.scrolled {
@@ -376,8 +385,13 @@ section {
 }
 
 @keyframes gradientShift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 .nav-links {
@@ -576,7 +590,7 @@ section {
 
 .work-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   padding: 0 1.5rem;
 }
@@ -587,7 +601,10 @@ section {
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid var(--surface-0);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
   text-decoration: none;
   color: var(--text);
 }
@@ -692,7 +709,9 @@ footer h2 {
 [data-reveal] {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
 }
 
 [data-reveal].revealed {

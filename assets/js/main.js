@@ -1,4 +1,32 @@
 (() => {
+  // Random hero phrase
+  const phrases = [
+    "Know thyself.",
+    "The unexamined life is not worth living.",
+    "I know that I know nothing.",
+    "Man is the measure of all things.",
+    "Everything flows.",
+    "No man ever steps in the same river twice.",
+    "The only true wisdom is knowing you know nothing.",
+    "Wisdom begins in wonder.",
+    "Let no one ignorant of geometry enter.",
+    "Give me a lever long enough and I shall move the world.",
+    "Eureka!",
+    "The life which is unexamined is not worth living.",
+    "Excellence is not an act, but a habit.",
+    "We are what we repeatedly do.",
+    "There is nothing permanent except change.",
+    "The energy of the mind is the essence of life.",
+    "He who is not a good servant will not be a good master.",
+    "To perceive is to suffer.",
+    "Happiness depends upon ourselves.",
+    "Well begun is half done.",
+  ];
+  const heroPhrase = document.getElementById("hero-phrase");
+  if (heroPhrase) {
+    heroPhrase.textContent = phrases[Math.floor(Math.random() * phrases.length)];
+  }
+
   // Scroll reveal
   const revealObserver = new IntersectionObserver(
     (entries) => {
